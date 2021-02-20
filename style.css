@@ -1,7 +1,133 @@
-#logo {
-    width: 200px;
-}
 #logo img {
-    width: 100%;
+    width: 50px;
+    background-size: cover;
     height: auto;
+}
+
+#logo{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.image {
+    width: 100px;
+}
+
+.image img{
+    width: 70%;
+    height: auto;
+}
+
+#hotel_le_soleil_du_matin{
+    width: 100px;
+}
+#hotel_le_soleil_du_matin img{
+    width: 70%;
+    height: auto;
+}
+
+#au_coeur_de_leau{
+    width: 100px;
+}
+#au_coeur_de_leau img{
+    width: 70%;
+    height: auto;
+}
+
+#hotel_tout_bleu_et_blanc{
+    width: 100px;
+}
+#hotel_tout_bleu_et_blanc img{
+    width: 70%;
+    height: auto;
+}
+
+#vieux_port{
+    width: 100px;
+}
+#vieux_port img {
+    width:70%;
+    height: auto;
+}
+
+#fort_de_pomegues{
+    width: 100px;
+}
+#fort_de_pomegues img {
+    width:70%;
+    height: auto;
+}
+
+#ile_du_frioul{
+    width: 100px;
+}
+#ile_du_frioul img {
+    width:70%;
+    height: auto;
+}
+
+#parc_national_des_calanques{
+    width: 100px;
+}
+#parc_national_des_calanques img {
+    width:70%;
+    height: auto;
+}
+
+#notre_dame_de_la_garde{
+    width: 100px;
+}
+#notre_dame_de_la_garde img {
+    width:70%;
+    height: auto;
+}
+
+#parc_longchamp{
+    width: 100px;
+}
+#parc_longchamp img {
+    width:70%;
+    height: auto;
+}
+
+section{
+    background-color: #F2F2F2;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+header{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+footer {
+    background-color: #F2F2F2;
+}
+
+#searchbar{
+    border: 1px solid #0065FC;
+    border-radius: 5px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+ 
+a:hover {
+    color:#0065FC;
+    padding: 1rem;
+    text-decoration: overline;
+}
+
+a {
+    color: black;
 }

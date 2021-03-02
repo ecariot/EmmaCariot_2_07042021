@@ -1,48 +1,51 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
 #logo img {
-    width: 50px;
+    width: 70px;
     background-size: cover;
     height: auto;
 }
 
-#logo{
+#logo {
     display: flex;
     justify-content: flex-start;
 }
 
 .image {
-    width: 100px;
+    width: 100%;
 }
 
-.image img{
+.image img {
     width: 70%;
     height: auto;
 }
 
-#hotel_le_soleil_du_matin{
+#hotel_le_soleil_du_matin {
     width: 100px;
 }
-#hotel_le_soleil_du_matin img{
+#hotel_le_soleil_du_matin img {
     width: 70%;
     height: auto;
 }
 
-#au_coeur_de_leau{
+#au_coeur_de_leau {
     width: 100px;
 }
-#au_coeur_de_leau img{
+#au_coeur_de_leau img {
     width: 70%;
     height: auto;
 }
 
-#hotel_tout_bleu_et_blanc{
+#hotel_tout_bleu_et_blanc {
     width: 100px;
 }
-#hotel_tout_bleu_et_blanc img{
+#hotel_tout_bleu_et_blanc img {
     width: 70%;
     height: auto;
 }
 
-#vieux_port{
+#vieux_port {
     width: 100px;
 }
 #vieux_port img {
@@ -50,7 +53,7 @@
     height: auto;
 }
 
-#fort_de_pomegues{
+#fort_de_pomegues {
     width: 100px;
 }
 #fort_de_pomegues img {
@@ -58,7 +61,7 @@
     height: auto;
 }
 
-#ile_du_frioul{
+#ile_du_frioul {
     width: 100px;
 }
 #ile_du_frioul img {
@@ -66,7 +69,7 @@
     height: auto;
 }
 
-#parc_national_des_calanques{
+#parc_national_des_calanques {
     width: 100px;
 }
 #parc_national_des_calanques img {
@@ -74,7 +77,7 @@
     height: auto;
 }
 
-#notre_dame_de_la_garde{
+#notre_dame_de_la_garde {
     width: 100px;
 }
 #notre_dame_de_la_garde img {
@@ -82,7 +85,7 @@
     height: auto;
 }
 
-#parc_longchamp{
+#parc_longchamp {
     width: 100px;
 }
 #parc_longchamp img {
@@ -90,30 +93,15 @@
     height: auto;
 }
 
-section{
-    background-color: #F2F2F2;
-    display: inline-block;
-    justify-content: space-around;
-}
 
-header{
-    border: 1px solid black;
-    border-radius: 5px;
-}
 
-.navigation{
+.navigation {
     display: flex;
     justify-content: flex-end;
 }
 
-
 footer {
     background-color: #F2F2F2;
-}
-
-#searchbar{
-    border: 1px solid #0065FC;
-    border-radius: 5px;
 }
 
 .navbar {
@@ -122,12 +110,266 @@ footer {
     padding: 1rem;
 }
  
-a:hover {
+.navigation a:hover {
     color:#0065FC;
     padding: 1rem;
-    text-decoration: overline;
+    border-top: 2px solid #0065FC;
 }
 
 a {
     color: black;
+    text-decoration: none;
+}
+
+.navigation a {
+    margin: 0 1.5rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.navigation .subscribe {
+    color: #0065FC;
+    font-weight: 600;
+}
+
+h1 {
+    margin-right: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    margin-right: 0px;
+    font-size: 12px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+.grey-text {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.loc-icon {
+    border: 1px solid grey;
+    background-color: #F2F2F2;
+    padding: 0.6rem;
+    border-radius: 10px 0 0 10px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.search-bar {
+    display: flex;
+}
+.search-bar input {
+    width: 10rem;
+    border: 1px solid grey;
+    padding: 0.5rem; 
+    border-left: none;
+    border-right: none;
+}
+
+.search-bar button {
+    background-color: blue;
+    color:white;
+    border: 1px solid blue;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0.5rem;
+}
+
+.filter {
+    display: flex;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+.filterTitle {
+    margin: 0 2rem 1rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.fourFilters {
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+
+.fourFilters span {
+    padding: 0.5rem;
+}
+
+.fourFilters:hover {
+    background-color: #f3f8ff;
+    transform: scale(1.015);
+
+}
+.icons {
+    background-color: #DEEBFF;
+    border-radius: 100%;
+    min-height: 2rem;
+    min-width: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: -2px;
+    color: blue;
+    padding: 0.2rem;
+}
+ 
+.fourFilters {
+    margin: 1 1rem;
+}
+
+.fa-info {
+    color: blue;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    padding: 0rem 0;
+}
+
+.info-icon{
+    border: 1px solid grey;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem; 
+}
+
+.choice {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.populaires {
+    background-color: #F2F2F2;
+    width: 30%;
+    height: 35rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hebergements {
+    background-color: #F2F2F2;
+    border-radius: 10px;
+    padding: 0.5rem;
+    height: 30rem;
+    width: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5px;
+}
+
+.location {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 2vw;
+    grid-row-gap: 2rem;
+}
+
+.location-popu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.case-h {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-left: 1.5rem;
+    width: 10rem;
+    height: 8.5rem;
+    padding: 0.2rem;
+}
+
+.case-p {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-left: 1.5rem;
+    width: 15rem;
+    height: 5rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.case-h img {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 5rem;
+}
+
+.case-p img {
+    border-radius: 10px 0px 0px 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.text-p {
+    display: flex;
+    flex-direction: column;
+}
+
+.fa-star--blue {
+    color: blue;
+    font-size: 0.75rem;
+}
+
+.fa-star--grey {
+    color: grey;
+    font-size: 0.75rem;
+}
+
+h4 {
+    display: block;
+    margin-block-start: 0.3em;
+    margin-block-end: 0.3em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+h5 {
+    font-size: 11px;
+    display: block;
+    margin-block-start: 0.2em;
+    margin-block-end: 0.2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: lighter;
+}
+
+.star-icon {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+}
+
+.choice-title {
+    margin-left: 1.5rem;
+}
+
+.more {
+    margin-left: 1.5rem;
+    font-weight: bold;
+    font-size: 12px;
 }

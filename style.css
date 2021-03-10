@@ -179,10 +179,14 @@ h3 {
     margin-right: 1rem; 
 }
 
+/*choice*/
+
 .choice {
     display: flex;
     justify-content: space-around;
     margin-bottom: 3rem;
+    padding: 0rem 2.5vw;
+    column-gap: 2rem;
 }
 
 .populaires {
@@ -210,10 +214,9 @@ h3 {
     border-radius: 10px;
     padding: 0.5rem;
     height: 30rem;
-    width: 65%;
+    width: 69%;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 5px;
 }
 
 .location {
@@ -339,6 +342,7 @@ h5 {
     column-gap: 2rem;
     row-gap: 2rem;
     margin: 4rem 0;
+    padding: 0rem 2.5vw;
 }
 
 .activity-title {
@@ -404,51 +408,36 @@ h5 {
 
 footer {
     background-color: #F2F2F2;
+    width: 100%;
   }
 
-  footer h5 {
-    font-size: 1.2vw;
-    margin-bottom: 1.4em;
-    padding: 0;
-  }
-  footer ul {
-    padding: 0;
-  }
-  footer ul li {
-    list-style-type: none;
-    margin-bottom: 1.2em;
-    font-size: 1.1vw;
-  }
-  .apropos {
-    margin-right: 13vw;
-    margin-left: 3.5vw;
-  }
-  .hebergementsfooter {
-    margin-right: 13vw;
-    margin-left: 3.5vw;
-  }
-  .assistance {
-    margin-right: 13vw;
-    margin-left: 3.5vw;
-  }
-  .apropos ul li:hover,
-  .hebergementsfooter ul li:hover,
-  .assistance ul li:hover {
-    -webkit-text-stroke: 1px black;
-  }
+.footer-column-all {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
 
-  @media screen and (max-width: 1080px) {
-    footer {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 0rem 0rem 0rem;
-    }
+.footer-column {
+    width: 150px;
+    padding: 2rem 2rem;
+}
 
-    footer div {
-        padding-bottom: 1rem;
-    }
+.footer-items {
+    display: block;
+    margin: 1rem 0;
+}
 
-    footer ul {
-        padding-bottom: 1rem;
-    }
+.footer-items:hover {
+    text-decoration: underline;
+}
 
+footer a {
+    font-size: 10px;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+  

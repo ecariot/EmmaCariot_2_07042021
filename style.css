@@ -38,7 +38,18 @@ body {
 .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 1rem;
+    padding: 0rem 2.5vw;
+    padding: 2rem;
+}
+
+.header-text {
+    padding: 0rem 2.5vw;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header-text h2 {
+    margin-top: 0.6rem;
 }
  
 .navigation a:hover {
@@ -91,6 +102,7 @@ h3 {
 }
 .search-bar {
     display: flex;
+    padding: 0rem 2.5vw;
 }
 .search-bar input {
     width: 10rem;
@@ -113,6 +125,11 @@ h3 {
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
+    padding: 0rem 2.5vw;
+}
+
+.filter h2 {
+    font-size: 16px;
 }
 .filterTitle {
     margin: 0 2rem 1rem 0;
@@ -165,7 +182,8 @@ h3 {
 .info {
     display: flex;
     align-items: center;
-    padding: 0rem 0;
+    padding: 0rem 2.5vw;
+    margin-bottom: 1.5rem;
 }
 
 .info-icon{
@@ -217,6 +235,7 @@ h3 {
     width: 69%;
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .location {
@@ -225,6 +244,8 @@ h3 {
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 2vw;
     grid-row-gap: 2rem;
+    position: relative;
+    box-sizing: border-box;
 }
 
 .location-popu {
@@ -255,8 +276,16 @@ h3 {
     padding: 0.2rem;
     display: flex;
     flex-direction: row;
+    cursor: pointer;
 }
 
+.case-p:hover {
+    transform: scale(1.01);
+}
+
+.case-h:hover {
+    transform: scale(1.01);
+}
 .case-h img {
     border-radius: 10px 10px 0px 0px;
     width: 100%;
@@ -327,12 +356,54 @@ h5 {
 
 .choice-title {
     margin-left: 1.5rem;
+    margin-top: 1rem;
 }
 
 .more {
     margin-left: 1.5rem;
     font-weight: bold;
     font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    .choice {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        row-gap: 1rem;
+        }
+
+    .populaires {
+        width: 100%;
+        height: 11rem;
+    }
+
+    .hebergements {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .location {
+        width: 100%;
+    }
+
+    .location-popu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 45rem;
+    }
+
+    .case-p {
+        margin-left: 0.5rem;
+        width: 70%;
+    }
+
+    .popu-header {
+        padding: 0;
+    }
+
+
 }
 
 /*activity*/
@@ -343,14 +414,15 @@ h5 {
     row-gap: 2rem;
     margin: 4rem 0;
     padding: 0rem 2.5vw;
+    margin-top: 2rem;
 }
 
 .activity-title {
-    grid-column: 1/-1;
+    padding: 0rem 2.5vw;
 }
 
 .activity-box {
-    box-shadow: 0 0 20px #0000002e;
+    box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.2);
     border-radius: 1rem;
     overflow: hidden;
     display: flex;
@@ -424,7 +496,7 @@ footer {
     padding: 2rem 2rem;
 }
 
-.footer-items {
+.footer-item {
     display: block;
     margin: 1rem 0;
 }
@@ -440,4 +512,32 @@ footer a {
 footer h5 {
     font-weight: bold;
 }
-  
+
+@media screen and (max-width: 768px) {
+    .footer-column-all {
+        display: flex;
+        padding: 2rem;
+    }
+
+    .footer-column {
+        width: 100%;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .footer-column:first-child {
+        margin-top: 0;
+    }
+
+    .footer-column:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-column-title {
+        margin: 0;
+    }
+
+    .footer-item:last-child {
+        margin-bottom: 0;
+    }
+}

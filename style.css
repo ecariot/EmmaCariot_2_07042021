@@ -10,6 +10,8 @@ body {
     overflow-x: hidden;
 }
 
+/*header*/
+
 #logo img {
     width: 70px;
     background-size: cover;
@@ -66,6 +68,7 @@ a {
 .navigation .subscribe {
     color: #0065FC;
     font-weight: 600;
+    margin-left: 1.5rem;
 }
 
 h1 {
@@ -192,6 +195,29 @@ h3 {
     justify-content: center;
     margin-right: 1rem; 
 }
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        padding: 1rem;
+        position: relative;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: reverse;
+    }
+
+    .navigation {
+        width: 100vw;
+    }
+
+    .nav-1 {
+        display: flex;
+    }
+
+    .subscribe {
+        padding-bottom: 2rem;
+    }
+}
+
+/*header*/
 
 /*choice*/
 
@@ -400,77 +426,51 @@ h5 {
     .popu-header {
         padding: 0;
     }
+}
 
+@media screen and (max-width: 650px) {
+    .choice {
+        row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 12rem 12rem;
+    }
 
+    .hebergements {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 12rem 12rem;
+        height: auto;
+    }
+
+    .populaires {
+        display: block;
+        row-gap: 2rem;
+        width: auto;
+        height: auto;
+    }
+
+    .location-popu {
+        display: block;
+        row-gap: 2rem;
+        width: auto; 
+    }
+
+    .location {
+        display: block;
+    }
+
+    .case-h {
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .case-p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        width: 92%;
+    }
 }
 
 /*activity*/
-
-/*footer*/
-
-footer {
-    background-color: #F2F2F2;
-    width: 100%;
-  }
-
-.footer-column-all {
-    display: flex;
-    max-width: 100%;
-    margin: auto;
-    padding: 0 2rem;
-    box-sizing: border-box;
-}
-
-.footer-column {
-    width: 150px;
-    padding: 2rem 2rem;
-}
-
-.footer-item {
-    display: block;
-    margin: 1rem 0;
-}
-
-.footer-items:hover {
-    text-decoration: underline;
-}
-
-footer a {
-    font-size: 10px;
-}
-
-footer h5 {
-    font-weight: bold;
-}
-
-@media screen and (max-width: 768px) {
-    .footer-column-all {
-        display: flex;
-        padding: 2rem;
-    }
-
-    .footer-column {
-        width: 100%;
-        padding: 0;
-        margin: 1rem 0;
-    }
-
-    .footer-column:first-child {
-        margin-top: 0;
-    }
-
-    .footer-column:last-child {
-        margin-bottom: 0;
-    }
-
-    .footer-column-title {
-        margin: 0;
-    }
-
-    .footer-item:last-child {
-        margin-bottom: 0;
-    }
-}
 
 .activity {
     display: grid;
@@ -546,7 +546,7 @@ footer h5 {
       grid-template-rows: auto 12rem 12rem;
     }
   }
-  @media (max-width: 925px) {
+  @media (max-width: 768px) {
     .activity {
       row-gap: 2rem;
       grid-template-columns: repeat(2, 1fr);
@@ -560,3 +560,83 @@ footer h5 {
       grid-template-rows: auto 12rem 12rem 12rem 12rem 12rem 12rem;
     }
   }
+
+/*footer*/
+
+footer {
+    background-color: #F2F2F2;
+    width: 100%;
+  }
+
+.footer-column-all {
+    display: flex;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+.footer-column {
+    width: 300px;
+    padding: 2rem 2rem;
+}
+
+.footer-item {
+    display: block;
+    margin: 1rem 0;
+}
+
+.footer-items:hover {
+    text-decoration: underline;
+}
+
+footer a {
+    font-size: 10px;
+}
+
+footer h5 {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column-all {
+        display: flex;
+        padding: 2rem;
+    }
+
+    .footer-column {
+        width: 100%;
+        padding: 0;
+        margin: 1rem 0;
+    }
+
+    .footer-column:first-child {
+        margin-top: 0;
+    }
+
+    .footer-column:last-child {
+        margin-bottom: 0;
+    }
+
+    .footer-column-title {
+        margin: 0;
+    }
+
+    .footer-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .footer-column-all {
+        display: block;
+    }
+
+    .footer-item {
+        font-size: 15px;
+    }
+
+    .footer-column-title {
+        font-size: 16px;
+    }
+}

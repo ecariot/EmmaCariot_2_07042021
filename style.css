@@ -250,6 +250,10 @@ h3 {
         display: flex;
         justify-content: center;
     }
+
+    .subscribe {
+        color: #0065FC;
+    }
 }
 
 /*header*/

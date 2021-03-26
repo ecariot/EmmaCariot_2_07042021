@@ -82,7 +82,7 @@ h1 {
 
 h2 {
     margin-right: 0px;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 h3 {
@@ -91,6 +91,7 @@ h3 {
 
 .grey-text {
     color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
 }
 
 .loc-icon {
@@ -689,6 +690,10 @@ footer h5 {
 @media screen and (max-width: 767px) and (min-width: 320px) {
     .footer-column-all {
         display: block;
+    }
+
+    .footer-column {
+        width: auto;
     }
 
     .footer-item {

@@ -38,10 +38,6 @@ body {
     padding: 2rem;
 }
 
-.navbar-mobile {
-    display: none;
-}
-
 .header-text {
     padding: 0rem 2.5vw;
     margin-top: 1rem;
@@ -175,7 +171,7 @@ h3 {
 }
  
 .fourFilters {
-    margin: 1 1rem;
+    margin: 1rem 1rem;
 }
 
 .fa-info {
@@ -201,15 +197,6 @@ h3 {
 }
 
 @media screen and (max-width: 767px) and (min-width: 320px) {
-    .navbar {
-        display: none;
-    }
-
-    .navbar-mobile {
-        display: block;
-        color: #0065FC;
-        font-weight: 600;
-    }
 
     .logo {
         display: flex;
@@ -295,7 +282,6 @@ h3 {
     padding: 0.5rem;
     height: 30rem;
     width: 69%;
-    display: flex;
     flex-wrap: wrap;
     cursor: pointer;
 }
@@ -308,6 +294,7 @@ h3 {
     grid-row-gap: 2rem;
     position: relative;
     box-sizing: border-box;
+    padding-top: 2rem;
 }
 
 .location-popu {
@@ -654,7 +641,7 @@ footer a {
     font-size: 10px;
 }
 
-footer h5 {
+footer h4 {
     font-weight: bold;
 }
 

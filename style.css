@@ -17,25 +17,37 @@ body {
     height: auto;
 }
 
-.logo {
+/*.logo {
     display: flex;
     justify-content: flex-start;
-}
+}*/
 
 .image {
     width: 100%;
 }
 
-.navigation {
+/*.navigation {
     display: flex;
     justify-content: flex-end;
-}
+}*/
 
-.navbar {
+/*.navbar {
     display: flex;
     justify-content: space-between;
     padding: 0rem 2.5vw;
     padding: 2rem;
+}*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.navbar nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .header-text {
@@ -47,27 +59,33 @@ body {
 .header-text h2 {
     margin-top: 0.6rem;
 }
- 
-.navigation a:hover {
+
+nav a:hover { 
     color:#0065FC;
     padding: 1rem;
     border-top: 2px solid #0065FC;
-}
+ }
+
+ nav a {
+    padding: 1rem;
+    border-top: 2px solid transparent;
+ }
 
 a {
     color: black;
     text-decoration: none;
 }
 
-.navigation a {
+/* *.navigation a { 
     margin: 0 1.5rem;
     color: rgba(0, 0, 0, 0.6);
-}
+}*/
 
-.navigation .subscribe {
+.subscribe {
     color: #0065FC;
     font-weight: 600;
     margin-left: 1.5rem;
+    order: 3;
 }
 
 h1 {
@@ -118,6 +136,10 @@ h3 {
     border-bottom-right-radius: 10px;
     padding: 0.5rem;
     cursor: pointer;
+}
+
+.searchBar i {
+    display: none;
 }
 
 .filter {
@@ -199,17 +221,8 @@ h3 {
 @media screen and (max-width: 767px) and (min-width: 320px) {
 
     .logo {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding-bottom: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 2rem;
-    }
-
-    .logo img {
-        width: 90px;
+      min-width: 50%;
+      padding-left: 0.5rem;
     }
 
     .navigation {
@@ -217,18 +230,27 @@ h3 {
         justify-content: center;
     }
 
-    .navigation nav {
-        width: 100%;
-        display: flex;
+    .navbar {
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+    .navbar nav {
+        order: 3;
+        min-width: 100%;
+        justify-content: center;
     }
 
-    .navigation nav a {
+    .navbar nav a {
         width: 50%;
         margin: 0;
         display: block;
+        padding: 1rem;
+        width: 50%;
+        border-top: 2px solid transparent;
+        text-align: center;
     }
 
-    .navigation nav a:hover {
+    .navbar nav a:hover {
         color:#0065FC;
         border-bottom: 2px solid #0065FC;
         border-top: none;
@@ -241,6 +263,39 @@ h3 {
 
     .subscribe {
         color: #0065FC;
+        order: 2;
+        min-width: 40%;
+        text-align: right;
+    }
+
+    .loc-icon {
+        border: 1px solid grey;
+        background-color: #F2F2F2;
+        padding: 1rem;
+        border-radius: 10px 0 0 10px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .search-bar input {
+        width: 15rem;
+        border: 1px solid grey;
+        padding: 0.5rem; 
+        border-left: none;
+        border-right: none;
+        font-weight: bolder;
+        font-size: larger;
+    }
+
+    .searchBarRight {
+        display: none;
+    }
+
+    .searchBar i {
+        display: flex;
+        width: 2rem;
+        justify-content: center;
+        font-size: larger;
     }
 }
 
